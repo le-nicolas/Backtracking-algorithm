@@ -6,3 +6,10 @@ time and effort). but, only a rapid "computer control" to make them practical.
 Here, I present a nice "computer control" called backtracking algorithm. it help explore different options to find the best solution. In my understanding, its kind of like backpropagation but in a different variation. It systematically explores different possibilities by trying out values for each cell. If it reaches a dead end where it cannot find a valid value for a cell, it backtracks to the previous cell and tries a different value.
 
 what I love about this method is that it is effective for problems with large search spaces where trying every possible combination would be impractical. 
+
+
+![Backtracking](https://github.com/le-nicolas/Backtracking-algorithm/assets/112614851/dd740d21-085d-461d-aac9-0228abb58d5c)
+
+![maxresdefault (1)](https://github.com/le-nicolas/Backtracking-algorithm/assets/112614851/4fb93d8b-74b7-4fb3-b621-27c47470c0b0)
+
+
