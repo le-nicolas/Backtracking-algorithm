@@ -53,3 +53,6 @@ def solve_nqueens(n):
 # Example usage:
 n = 4
 solve_nqueens(n)
+
+
+#future work, i want to visualize the process. kind of like a graphviz sort of thing
