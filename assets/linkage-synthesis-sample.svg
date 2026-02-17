@@ -1,0 +1,73 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='980' height='560' viewBox='0 0 980 560' role='img' aria-label='Backtracking Lab four-bar synthesis sample'>
+<defs>
+<linearGradient id='bg' x1='0' y1='0' x2='1' y2='1'><stop offset='0%' stop-color='#f6fbff'/><stop offset='100%' stop-color='#eef3ff'/></linearGradient>
+<linearGradient id='card' x1='0' y1='0' x2='0' y2='1'><stop offset='0%' stop-color='#ffffff'/><stop offset='100%' stop-color='#f8faff'/></linearGradient>
+</defs>
+<rect width='980' height='560' fill='url(#bg)' rx='20' ry='20'/>
+<rect x='24' y='24' width='932' height='512' rx='18' fill='url(#card)' stroke='#d9e1ff'/>
+<text x='52' y='62' font-family='Segoe UI, Arial, sans-serif' font-size='24' font-weight='700' fill='#182645'>Four-Bar Synthesis Sample</text>
+<text x='52' y='88' font-family='Segoe UI, Arial, sans-serif' font-size='14' fill='#40557f'>Hybrid search: backtracking for feasibility + gradient refinement for fit</text>
+<rect x='48' y='110' width='430' height='390' rx='14' fill='#ffffff' stroke='#d7def5'/>
+<text x='64' y='138' font-family='Segoe UI, Arial, sans-serif' font-size='15' font-weight='600' fill='#22335d'>Mechanism Pose (input=50 deg)</text>
+<line x1='120.00' y1='180.00' x2='400.00' y2='180.00' stroke='#2f4f93' stroke-width='6' stroke-linecap='round'/>
+<line x1='120.00' y1='180.00' x2='209.99' y2='72.75' stroke='#0a8f5d' stroke-width='5' stroke-linecap='round'/>
+<line x1='209.99' y1='72.75' x2='255.43' y2='419.79' stroke='#d06d00' stroke-width='5' stroke-linecap='round'/>
+<line x1='255.43' y1='419.79' x2='400.00' y2='180.00' stroke='#9c2c7b' stroke-width='5' stroke-linecap='round'/>
+<circle cx='251.56' cy='132.12' r='3.2' fill='#2fbf71' opacity='0.75'/>
+<circle cx='234.68' cy='99.70' r='3.2' fill='#2fbf71' opacity='0.75'/>
+<circle cx='209.99' cy='72.75' r='3.2' fill='#2fbf71' opacity='0.75'/>
+<circle cx='179.17' cy='53.12' r='3.2' fill='#2fbf71' opacity='0.75'/>
+<circle cx='144.31' cy='42.13' r='3.2' fill='#2fbf71' opacity='0.75'/>
+<circle cx='376.59' cy='459.02' r='3.2' fill='#f08a24' opacity='0.75'/>
+<circle cx='303.54' cy='442.86' r='3.2' fill='#f08a24' opacity='0.75'/>
+<circle cx='255.43' cy='419.79' r='3.2' fill='#f08a24' opacity='0.75'/>
+<circle cx='226.64' cy='399.88' r='3.2' fill='#f08a24' opacity='0.75'/>
+<circle cx='210.21' cy='385.87' r='3.2' fill='#f08a24' opacity='0.75'/>
+<circle cx='120.00' cy='180.00' r='6.2' fill='#111827'/>
+<text x='130.00' y='170.00' font-family='Segoe UI, Arial, sans-serif' font-size='14' fill='#1f2f57'>A</text>
+<circle cx='209.99' cy='72.75' r='6.2' fill='#111827'/>
+<text x='219.99' y='62.75' font-family='Segoe UI, Arial, sans-serif' font-size='14' fill='#1f2f57'>B</text>
+<circle cx='255.43' cy='419.79' r='6.2' fill='#111827'/>
+<text x='265.43' y='409.79' font-family='Segoe UI, Arial, sans-serif' font-size='14' fill='#1f2f57'>C</text>
+<circle cx='400.00' cy='180.00' r='6.2' fill='#111827'/>
+<text x='410.00' y='170.00' font-family='Segoe UI, Arial, sans-serif' font-size='14' fill='#1f2f57'>D</text>
+<text x='64' y='468' font-family='Consolas, Courier New, monospace' font-size='13' fill='#30466f'>Lengths: g=4.0, a=2.0, b=5.0, c=4.0, branch=+1</text>
+<text x='64' y='488' font-family='Consolas, Courier New, monospace' font-size='13' fill='#30466f'>RMSE: 0.0000 deg    Min transmission: 25.726 deg</text>
+<rect x='500' y='110' width='434' height='390' rx='14' fill='#ffffff' stroke='#d7def5'/>
+<text x='516' y='138' font-family='Segoe UI, Arial, sans-serif' font-size='15' font-weight='600' fill='#22335d'>Target vs Synthesized Output Angles</text>
+<rect x='520.00' y='70.00' width='390.00' height='250.00' fill='#fbfcff' stroke='#d7def5'/>
+<line x1='520.00' y1='70.00' x2='910.00' y2='70.00' stroke='#edf1ff'/>
+<line x1='520.00' y1='120.00' x2='910.00' y2='120.00' stroke='#edf1ff'/>
+<line x1='520.00' y1='170.00' x2='910.00' y2='170.00' stroke='#edf1ff'/>
+<line x1='520.00' y1='220.00' x2='910.00' y2='220.00' stroke='#edf1ff'/>
+<line x1='520.00' y1='270.00' x2='910.00' y2='270.00' stroke='#edf1ff'/>
+<line x1='520.00' y1='320.00' x2='910.00' y2='320.00' stroke='#edf1ff'/>
+<line x1='520.00' y1='70.00' x2='520.00' y2='320.00' stroke='#edf1ff'/>
+<line x1='617.50' y1='70.00' x2='617.50' y2='320.00' stroke='#edf1ff'/>
+<line x1='715.00' y1='70.00' x2='715.00' y2='320.00' stroke='#edf1ff'/>
+<line x1='812.50' y1='70.00' x2='812.50' y2='320.00' stroke='#edf1ff'/>
+<line x1='910.00' y1='70.00' x2='910.00' y2='320.00' stroke='#edf1ff'/>
+<text x='516' y='340' font-family='Segoe UI, Arial, sans-serif' font-size='12' fill='#4c5f86'>Input angle (deg)</text>
+<text x='870' y='92' font-family='Segoe UI, Arial, sans-serif' font-size='12' fill='#4c5f86'>Output angle (deg)</text>
+<polyline points='520.00,87.09 617.50,174.59 715.00,236.89 812.50,277.72 910.00,302.91' fill='none' stroke='#1f78ff' stroke-width='3.4' stroke-linejoin='round' stroke-linecap='round'/>
+<polyline points='520.00,87.09 617.50,174.59 715.00,236.89 812.50,277.72 910.00,302.91' fill='none' stroke='#ff6a00' stroke-width='2.2' stroke-dasharray='7 5' stroke-linejoin='round' stroke-linecap='round'/>
+<circle cx='520.00' cy='87.09' r='4.0' fill='#1f78ff'/>
+<circle cx='617.50' cy='174.59' r='4.0' fill='#1f78ff'/>
+<circle cx='715.00' cy='236.89' r='4.0' fill='#1f78ff'/>
+<circle cx='812.50' cy='277.72' r='4.0' fill='#1f78ff'/>
+<circle cx='910.00' cy='302.91' r='4.0' fill='#1f78ff'/>
+<circle cx='520.00' cy='87.09' r='3.2' fill='#ff6a00'/>
+<circle cx='617.50' cy='174.59' r='3.2' fill='#ff6a00'/>
+<circle cx='715.00' cy='236.89' r='3.2' fill='#ff6a00'/>
+<circle cx='812.50' cy='277.72' r='3.2' fill='#ff6a00'/>
+<circle cx='910.00' cy='302.91' r='3.2' fill='#ff6a00'/>
+<rect x='520' y='360' width='392' height='120' rx='10' fill='#f8faff' stroke='#dbe3ff'/>
+<line x1='540' y1='388' x2='584' y2='388' stroke='#1f78ff' stroke-width='3.4'/>
+<text x='594' y='393' font-family='Segoe UI, Arial, sans-serif' font-size='13' fill='#30466f'>Target motion</text>
+<line x1='540' y1='416' x2='584' y2='416' stroke='#ff6a00' stroke-width='2.2' stroke-dasharray='7 5'/>
+<text x='594' y='421' font-family='Segoe UI, Arial, sans-serif' font-size='13' fill='#30466f'>Synthesized motion</text>
+<text x='540' y='448' font-family='Consolas, Courier New, monospace' font-size='13' fill='#30466f'>Search nodes: 120</text>
+<text x='700' y='448' font-family='Consolas, Courier New, monospace' font-size='13' fill='#30466f'>Backtracks: 16</text>
+<text x='540' y='470' font-family='Consolas, Courier New, monospace' font-size='13' fill='#30466f'>Feasible designs: 130</text>
+<text x='700' y='470' font-family='Consolas, Courier New, monospace' font-size='13' fill='#30466f'>Elapsed: 1.519 ms</text>
+</svg>

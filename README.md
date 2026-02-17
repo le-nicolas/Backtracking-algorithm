@@ -3,6 +3,15 @@
 Modern backtracking toolkit with a flagship application in classical mechanism
 design: **four-bar linkage synthesis**.
 
+## Sample Result
+
+![Four-bar synthesis sample](assets/linkage-synthesis-sample.svg)
+
+This image is generated from the solver output and shows:
+- a synthesized linkage pose
+- motion curve fit (target vs synthesized)
+- search metrics (nodes, backtracks, feasible designs, runtime)
+
 ## Core Application: Mechanism and Linkage Synthesis
 
 This project solves the classic kinematics problem:
@@ -31,7 +40,7 @@ minimization.
 ```bash
 python main.py linkage \
   --input-angles 20,35,50,65,80 \
-  --target-angles 113.80,123.94,132.23,139.35,145.65 \
+  --target-angles 265.205,249.848,238.915,231.748,227.327 \
   --ground-range 3:6:0.5 \
   --crank-range 1:3:0.5 \
   --coupler-range 4:6:0.5 \
