@@ -1,48 +1,69 @@
-# Backtracking-algorithm
-Computers will dominate our technical lives and when compared to Humans they have the advantages. They are far more accurate (and precise),
-far more reliable —very far ahead (many have error correction built into them), can change programs, also unlearn and then learn the new thing. (in which we humans consume hours and hours of
-time and effort). but, only a rapid "computer control" to make them practical. 
+# Backtracking Lab
 
-![Backtracking](https://github.com/le-nicolas/Backtracking-algorithm/assets/112614851/dd740d21-085d-461d-aac9-0228abb58d5c)
+Modern backtracking toolkit with a flagship application in classical mechanism
+design: **four-bar linkage synthesis**.
 
+## Core Application: Mechanism and Linkage Synthesis
 
-Here, I present a nice "computer control" called backtracking algorithm. it help explore different options to find the best solution. In my understanding, its kind of like backpropagation but in a different variation. It systematically explores different possibilities by trying out values for each cell. If it reaches a dead end where it cannot find a valid value for a cell, it backtracks to the previous cell and tries a different value.
+This project solves the classic kinematics problem:
 
-what I love about this method is that it is effective for problems with large search spaces where trying every possible combination would be impractical. 
+- design a planar four-bar mechanism
+- hit target output positions for chosen input angles
+- avoid near-singular transmission configurations
+- respect geometric feasibility constraints
 
+### Hybrid Method (Backtracking + Backprop-Style Refinement)
 
+1. **Backtracking search**
+   - discretizes link lengths (`ground`, `crank`, `coupler`, `rocker`)
+   - assigns lengths step by step
+   - prunes partial designs early when triangle/mobility constraints fail
+2. **Gradient refinement**
+   - takes top feasible candidates
+   - minimizes output-angle error with finite-difference gradients
+   - tunes continuous lengths and phase offset
 
-whereas backprop, is to minimize the error between the predicted and actual output.
+This combines systematic feasibility exploration with continuous error
+minimization.
 
+## Quick Start
 
-optimizes the weights of the neural network by minimizing the error function
+```bash
+python main.py linkage \
+  --input-angles 20,35,50,65,80 \
+  --target-angles 113.80,123.94,132.23,139.35,145.65 \
+  --ground-range 3:6:0.5 \
+  --crank-range 1:3:0.5 \
+  --coupler-range 4:6:0.5 \
+  --rocker-range 3:5:0.5 \
+  --top-k 5
+```
 
+Use `--json` for machine-readable output.
 
-It propagates the error from the output layer back to the input layer, adjusting weights to reduce the error.
+## Other Commands
 
+- `python main.py nqueens --size 8 --max-solutions 5`
+- `python main.py sudoku --puzzle "<81-char puzzle>"`
+- `python main.py benchmark --sizes 8 10 12 --max-solutions 3`
 
-Inputs are passed through the network to get the output.
+## Development
 
+Run tests:
 
-The error is calculated as the difference between the predicted and actual outputs.
+```bash
+python -m unittest discover -s tests -v
+```
 
+## Project Layout
 
-The error is propagated backward through the network, and gradients of the error with respect to each weight are calculated.
-
-
-Weights are updated using the calculated gradients to minimize the error
-
-![maxresdefault (1)](https://github.com/le-nicolas/Backtracking-algorithm/assets/112614851/4fb93d8b-74b7-4fb3-b621-27c47470c0b0)
-
-
-
-
-
-
-
-
-
-
-
-
-TL;DR they are kind of the same, but different approach to a different purpose.
+```text
+backtracking_lab/
+  cli.py
+  linkage.py
+  metrics.py
+  nqueens.py
+  sudoku.py
+tests/
+main.py
+```

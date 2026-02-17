@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "backtracking-lab"
+version = "0.1.0"
+description = "Practical backtracking solvers and benchmark CLI"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "Nicolas" }]
+keywords = ["backtracking", "algorithms", "n-queens", "sudoku", "cli"]
+
+[project.scripts]
+backtracking-lab = "backtracking_lab.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["backtracking_lab*"]
